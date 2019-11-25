@@ -57,7 +57,6 @@ func main() {
 	fmt.Println(results)
 }
 
-//curl -X GET -u vshesha --url "https://api.splunk.com/2.0/rest/login/splunk"
 func loginUser(username, password string) string {
 
 	req, err := http.NewRequest("GET", "https://api.splunk.com/2.0/rest/login/splunk", nil)
